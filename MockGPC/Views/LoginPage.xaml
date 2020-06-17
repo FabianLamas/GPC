@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MockGPC.Views.LoginPage"
+             Title="TGV - Arquetipo Xamarin">
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackLayout  x:Name="LoginLayout">
+                    <Image Grid.Row="0" Source="icon" x:Name="imgLogo" 
+                            HorizontalOptions="CenterAndExpand" 
+                            HeightRequest="250" WidthRequest="250" 
+                            Margin="0, 10, 0, 10"/>
+                    <Label FontSize="Large" TextColor="#D40000" HorizontalOptions="CenterAndExpand" FontAttributes="Bold">
+                        Login
+                    </Label>
+
+                    <StackLayout Grid.Row="1" Padding="30,20">
+                        <Entry FontSize="Medium" Placeholder="Ingrese su usuario" 
+                            PlaceholderColor="Black" />
+
+                        <Entry FontSize="Medium" Placeholder="Ingrese su contraseña"
+                            PlaceholderColor="Black"  IsPassword="True" />
+
+                        <Button Text="Login" TextColor="White" CornerRadius="20" BackgroundColor="#D40000"
+                            BorderColor="Black" BorderWidth="1" Clicked="Button_Clicked">
+                            <Button.Triggers>
+                                <Trigger TargetType="Button" Property="IsEnabled" Value="False">
+                                    <Setter Property="TextColor" Value="DarkGray" />
+                                    <Setter Property="BackgroundColor" Value="LightGray" />
+                                </Trigger>
+                            </Button.Triggers>
+                        </Button>
+
+                        <Label TextColor="#D40000" HorizontalOptions="CenterAndExpand" FontAttributes="Bold">
+                                TGV – Excelencia en soluciones informáticas
+                        </Label>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
