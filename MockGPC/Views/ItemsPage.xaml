@@ -22,27 +22,11 @@
 
                 <Button x:Name="btn1" Style="{StaticResource ButtonHome}" HeightRequest="{Binding Width, Source={x:Reference btn1}}"
                         Grid.Row="0" Grid.Column="0" ImageSource="icon_clientPC" Clicked="btn1_Clicked" />
-                <Label Text="Clientes" Grid.Row="1" Grid.Column="0" Style="{StaticResource LabelHome}"/>
+                <Label Text="Mis Proyectos Colaborativos" Grid.Row="1" Grid.Column="0" Style="{StaticResource LabelHome}"/>
 
                 <Button x:Name="btn2" Style="{StaticResource ButtonHome}" HeightRequest="{Binding Width, Source={x:Reference btn2}}"
                         Grid.Row="0" Grid.Column="1" ImageSource="icon_clientSWF" Clicked="btn2_Clicked"/>
-                <Label Text="Section2" Grid.Row="1" Grid.Column="1" Style="{StaticResource LabelHome}"/>
-
-                <Button x:Name="btn3" Style="{StaticResource ButtonHome}" HeightRequest="{Binding Width, Source={x:Reference btn3}}"
-                        Grid.Row="0" Grid.Column="2" ImageSource="icon_clientPC" Clicked="btn3_Clicked"/>
-                <Label Text="Section3" Grid.Row="1" Grid.Column="2" Style="{StaticResource LabelHome}"/>
-
-                <Button x:Name="btn4" Style="{StaticResource ButtonHome}" HeightRequest="{Binding Width, Source={x:Reference btn4}}"
-                        Grid.Row="2" Grid.Column="0" ImageSource="icon_clientSWF" Clicked="btn4_Clicked"/>
-                <Label Text="Section4" Grid.Row="3" Grid.Column="0" Style="{StaticResource LabelHome}"/>
-
-                <Button x:Name="btn5" Style="{StaticResource ButtonHome}" HeightRequest="{Binding Width, Source={x:Reference btn5}}"
-                        Grid.Row="2" Grid.Column="1" ImageSource="icon_clientPC" Clicked="btn5_Clicked"/>
-                <Label Text="Section5" Grid.Row="3" Grid.Column="1" Style="{StaticResource LabelHome}"/>
-
-                <Button Style="{StaticResource ButtonHome}" HeightRequest="{Binding Width, Source={x:Reference btn3}}"
-                        Grid.Row="2" Grid.Column="2" ImageSource="icon_clientSWF" Clicked="Button_Clicked"/>
-                <Label Text="Section6" Grid.Row="3" Grid.Column="2" Style="{StaticResource LabelHome}"/>
+                <Label Text="Mi Software Factory" Grid.Row="1" Grid.Column="1" Style="{StaticResource LabelHome}"/>
             </Grid>
         </ScrollView>
     </ContentPage.Content>
